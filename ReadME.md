@@ -1,3 +1,5 @@
+AI-Generated Daily Wallpapers Based on Social Media Trends
+
 The project aims to scrape trending keywords from social media platforms daily and use these keywords to generate AI-based wallpapers. The wallpapers will be dynamically updated each day via an online connection. The workflow might involves:
 
 Able to figure out the top 10 most frequent words or phrases, generate 10 wallpapers, and randomly select from the system to update the wallpaper every 3 hours.
