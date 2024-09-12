@@ -10,6 +10,9 @@ AI-based Wallpaper Generation: Leveraging a text-to-image generation model (such
 Daily Wallpaper Updates: Setting up a system that connects to the internet daily to download the generated wallpaper and apply it to the user's desktop automatically.
 
 
+start by manually gathering and processing the data, testing the AI generation, and storing it locally. Once that pipeline is working well, focus on automating the scraping and daily updates
+
+
 
 
 
