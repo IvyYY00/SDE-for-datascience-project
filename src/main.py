@@ -4,7 +4,10 @@ from src.scraping_ins import fetch_trending
 
 def main():
     user_input = input("Country name：")
+    user_input2 = input("interest: ")
+    user_input3 = input('base on most populor trend or base on personel interest')
     country_list = [country.strip() for country in user_input.split(',')]
+    interest_list = 
 
     regions = []
     for country in country_list:
