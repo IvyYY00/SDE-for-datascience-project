@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Image Generator</title>
+</head>
+<body>
+    <h1>Select a Country to Generate Images</h1>
+    <form method="POST">
+        <label for="country">Choose a country:</label>
+        <select name="country" id="country" required>
+            <option value="united states">United States</option>
+            <option value="canada">Canada</option>
+            <option value="united kingdom">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select>
+        <button type="submit" name="generate_images">Generate Images</button>
+    </form>
+
+    {% if image_paths %}
+        <h2>Generated Images for {{ country|title }}</h2>
+        {% for image_path in image_paths %}
+            <div>
+                <img src="{{ url_for('static', filename=image_path) }}" alt="Generated Image">
+            </div>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
